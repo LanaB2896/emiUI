@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html>
+<head><title>About</title>
+
+
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+body{
+margin:0;
+}
+header 
+{
+    background-color: #666;
+    padding: 3px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+	
+}	
+
+.txtemail
+	{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid grey;
+	}
+
+ul
+		{
+		display:block;
+		list-style-type: none;
+	    margin: 0;
+		padding: 0;
+		width: 25%;
+		background-color: #f1f1f1;
+		position: fixed;
+		height: 100%;
+		}
+		
+		
+			.home
+			{
+			font-size: larger;
+			padding: 8px 16px;
+			font-style: italic;
+			display: block;
+			color: #000;
+			}
+			
+			.active
+			{
+			color: #000;
+		    padding: 8px 16px;
+		    text-decoration: none;
+			font-size: larger;
+			font-style: italic;
+			background-color: #4CAF50;
+			color: white;
+			display:block;
+			}
+
+			.Admclg
+			{
+			display: block;
+			color: #000;
+			padding: 8px 16px;
+			text-decoration: none;
+			font-size: larger;
+			font-style: italic;
+			}
+			.feestu
+			{
+			 display: block;
+		    color: #000;
+		    padding: 8px 16px;
+		    text-decoration: none;
+			font-size: larger;
+			font-style: italic;
+			}
+
+			
+			
+			
+</style>
+</head>
+<body>
+	
+		
+  <ul>
+<li><a class="home" href="#"> Home</a></li>
+<li> <a class="Admclg" href="aboutus.html"> About Us </a></li>
+<li><a class="active" href="testing.html"> EMI Calculator </a></li>
+<li><a class="feestu" href="repayment.html"> Repayment shedule </a></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+<header>
+		<!-- <body background="blue.png"> -->
+		<img src= "emi-calculator1.png" width="100%">
+		<!-- <h1>EMI Calculator</h1> -->
+</header>
+		
+
+	<div border:1px solid grey;>
+	<form:form modelAttribute="userValues" action="save" method="POST">
+
+			<form:input path="principle" label class="lblusername">Principle Amount</label><br><br>
+			<!-- <input class="txtemail" type="Email"><br><br> -->
+
+		<!-- Principle: <form:input path="principle" class="txtemail"/><br><br> -->
+		Rate Of Interest: <form:input path="rateofinterest"/><br>
+		Tenure: <form:input path="tenure"/><br>
+		Number Of installenments: <form:input path="noOfInstallenment"/><br>
+		<div>
+			<input type="submit" value="Submit">
+		</div>
+	</form:form>		
+	</div>
+</div>
+
+ </body>
+</html>
